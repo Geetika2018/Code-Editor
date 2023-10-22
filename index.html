@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Binary Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer type="text/javascript" src="app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js"
+        integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="editor-container">
+        <div class="editor-toolbar">
+            <!------- <button class="editor-toolbar__button" id="save-button">Save</button>--- -->
+        </div>
+    </div>
+    <div class="container split">
+
+        <!-- Text area for Html Code  -->
+
+        <div class="row">
+
+            <button class="button copy-button" id="copy-button" data-textarea="htmlCode">Copy HTML</button>
+
+            <button class="button lock-button" id="html-lock-button">Lock</button>
+
+            <button class="button save-button" id="save-button">Save</button>
+        </div>
+        <textarea id="htmlCode" placeholder="Type HTML code here" spellcheck="false" oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"></textarea>
+
+        <div class="row">
+            <button class="button copy-button" id="copy-button" data-textarea="cssCode">Copy CSS</button>
+            <button class="button lock-button" id="css-lock-button">Lock</button>
+        </div>
+
+        <!-- Text area for Css Code  -->
+
+        <textarea id="cssCode" placeholder="Type CSS code here" spellcheck="false" oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"></textarea>
+
+        <div class="row">
+            <button class="button copy-button" id="copy-button" data-textarea="javascriptCode">Copy
+                JS</button>
+            <button class="button lock-button" id="js-lock-button">Lock</button>
+        </div>
+
+        <!-- Text area for Javascript Code  -->
+
+        <textarea id="javascriptCode" spellcheck="false" placeholder="Type JavaScript code here" oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"></textarea>
+    </div>
+
+        <!--------- Output area code------- -->
+    <div class="iframe-container split">
+        <iframe id="viewer"></iframe>
+    </div>
+
+</body>
+
+</html>
