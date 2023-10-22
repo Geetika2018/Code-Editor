@@ -36,10 +36,9 @@ Use the cd (change directory) command to move into the project directory:
 
 <h3>Still need help?</h3>
 ```
-
   if (needHelp === true) {
   var emailId = "geetika.pandey18@gmail.com";
-  > email is the best way to reach out to me.
+  // email is the best way to reach out to me.
   sendEmail(emailId);
   }
 ```
