@@ -34,7 +34,7 @@ Use the cd (change directory) command to move into the project directory:
 
  - Remember to replace `https://github.com/username/code-editor.git` with the actual URL of your GitHub repository.
 
-<h3>Still need help?</h3>
+**Still need help?**
 ```
   if (needHelp === true) {
   var emailId = "geetika.pandey18@gmail.com";
