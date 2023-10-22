@@ -1,11 +1,11 @@
 # Code-Editor
 
 <h2>Feature</h2>
-- Implement lock/unlock feature allowing users to prevent further edits to the code.
-- Integrate save functionality, enabling users to save their edited code to the server.
-- Add copy-to-clipboard feature for easy code sharing and quick copying.
-- Enhance user interface with intuitive icons and tooltips for these new actions.
-- Refactor existing code for improved modularity and readability.
+- Implement lock/unlock feature allowing users to prevent further edits to the code. <br>
+- Integrate save functionality, enabling users to save their edited code to the server.<br>
+- Add copy-to-clipboard feature for easy code sharing and quick copying.<br>
+- Enhance user interface with intuitive icons and tooltips for these new actions.<br>
+- Refactor existing code for improved modularity and readability.<br>
 
 <h2>Installation Required</h2>
 - To run this project locally on your system, you don't need any special tools or dependencies. Simply follow these steps:
@@ -35,10 +35,10 @@ Use the cd (change directory) command to move into the project directory:
  - Remember to replace `https://github.com/username/code-editor.git` with the actual URL of your GitHub repository.
 
 <h3>Still need help?</h3>
-```javascript
+````javascript
   if (needHelp === true) {
   var emailId = "geetika.pandey18@gmail.com";
   // email is the best way to reach out to me.
   sendEmail(emailId);
   }
-```
+````
