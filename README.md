@@ -30,16 +30,15 @@ Use the cd (change directory) command to move into the project directory:
 
  That's it! The project should now open in your web browser, and you can interact with it locally.
 
+<h1>License</h1>
+
+ - Remember to replace `https://github.com/username/code-editor.git` with the actual URL of your GitHub repository.
+
 <h3>Still need help?</h3>
+```
   if (needHelp === true) {
      var emailId = "geetika.pandey18@gmail.com";
      // email is the best way to reach out to me.
      sendEmail(emailId);
   }
-
-
-<h1>License</h1>
-
- - Remember to replace `https://github.com/username/code-editor.git` with the actual URL of your GitHub repository.
-
-<h1>Still need help?</h1>
+```
